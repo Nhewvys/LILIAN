@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="shortcut icon" href="src/images/image-removebg-preview (3).png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Lilian Joic</title>
+</head>
+<style>
+    img {
+        width: 6rem;
+    }
+</style>
+
+<body>
+    <section class="container-fluid" style="background-image: url(src/images/bg6.jpg);" id="main">
+        <header>
+            <nav class="navbar">
+                <div class="nav_logo">
+                    <a class="navbar-brand ms-3" href="#">
+                        <img src="src/images/logo-completa.png" alt="Logo" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="nav_toggle hidden" id="nav-button" aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <div class="nav_links">
+                    <ul class="d-flex gap-5 m-0 align-items-center">
+                        <li><a href="#main" class="active">Inicio</a></li>
+                        <li><a href="#Especialidade">Especialidades</a></li>
+                        <li><a href="#escritori">Escritório</a></li>
+                        <li><a href="#Sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="btn-header me-4">
+                    <button>contato</button>
+                </div>
+            </nav>
+        </header>
+        <div class="d-flex" id="content-1">
+            <div class="left ps-5">
+                <div class="tittle">
+                    <h1>LILIAN JOIC</h1>
+                    <span>ADVOGADA PREVIDENCIARISTA</span>
+                </div>
+                <div class="content-left d-flex flex-column gap-3">
+                    <h4>Seu Direito é Nosso Compromisso</h4>
+                    <p>Segurança e tranquilidade. Com a Lilian Joíc, você recebe o suporte necessário para garantir seus
+                        benefícios de aposentadoria, auxílio-doença, salário-maternidade, pensão por morte,
+                        seguro-defeso pesca, e BPC/LOAS. Entre em contato agora e veja como podemos ajudar você a
+                        conquistar seus direitos.</p>
+                </div>
+            </div>
+            <div class="rigth">
+                <img src="src/images/person-lilian.png" alt="person-lilian">
+                <div class="circle"></div>
+                <div class="circle-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="Especialidades pt-5 mb-5" id="Especialidade">
+        <div class="tittle-page mb-5">
+            <h1 class="gradient-text">ESPECIALIDADES</h1>
+            <span class="mt-1">Como podemos te ajudar? Não abra mão dos seus direitos!</span>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-tittle">
+                        <img src="src/images/icons/urbana.svg" alt="icone urbano">
+                        <h3 class="gradient-text">Aposentadoria Urbana</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Aposentadoria para trabalhadores urbanos que contribuíram para o sistema previdenciário.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tittle">
+                        <img src="src/images/icons/rural.svg" alt="icone urbano">
+                        <h3 class="gradient-text">Aposentadoria Rural</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Aposentadoria de agricultores familiares, empregados e empresários rurais.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tittle">
+                        <img src="src/images/icons/bpc.svg" alt="icone urbano">
+                        <h3 class="gradient-text">Benefício Prestação Continuada à Pessoa Idosa ou com Deficiência</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Benefício assistencial concedido a idosos ou pessoas com deficiência em situação de
+                            vulnerabilidade social.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tittle">
+                        <img src="src/images/icons/maternidade.svg" alt="icone urbano">
+                        <h3 class="gradient-text">Salário Maternidade</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Guiamos você para garantir sua aposentadoria sem complicações.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tittle">
+                        <img src="src/images/icons/defeso.svg" alt="icone urbano">
+                        <h3 class="gradient-text">Seguro Defeso</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Oferecemos orientação para pescadores artesanais garantirem o seguro defeso.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-tittle">
+                        <img src="src/images/icons/doença.svg" alt="icone urbano">
+                        <h3 class="gradient-text">Auxílio Doença</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Assistência no processo de obtenção do auxílio doença para garantir sua segurança financeira
+                            durante a doença.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="escritori" class="pt-5 pb-5">
+        <div class="tittle-page mb-5">
+            <h1 class="gradient-text">EXPERIÊNCIA E COMPETÊNCIA</h1>
+            <span class="mt-1">Confiança que faz a diferença. Conhecimento e prática a serviço do seu sucesso</span>
+        </div>
+        <div class="container mb-5">
+            <div class="content-p">
+                <p>Conte com a experiência e dedicação de nossa equipe pora assegutar que você tenha acesso a todos os
+                    seus algian previdegciórios. Com um atendimento personalizado a eficiente, estamos prontos para
+                    orienta-lo em cada etapa de processo, proporcionando a trangulid ai a a eginanço que você merece.
+                    Entre em contato concaço e detcubrá como podemos ajudar você a alcançar seus objutivos com
+                    excelência e contiança.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-counter">
+                <div class="counters d-flex gap-3">
+                    <div class="counter">
+                        <span>+1</span>
+                        <p>ANOS DE EXPERIÊNCIA</p>
+                    </div>
+                    <div class="counter">
+                        <span>+800</span>
+                        <p>PROCESSOS SOLUCIONADOS</p>
+                    </div>
+                    <div class="counter">
+                        <span>94%</span>
+                        <p>DE APROVAÇÃO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-3 d-flex align-items-end justify-content-end p-5">
+            <!-- <img src="src/images/logo-01.png" alt="" srcset=""> -->
+        </div>
+    </section>
+    <section id="Sobre" class="mb-5" style="background-image: url(src/images/bg-sobre.jpg);">
+        <div class="bg-gradient"></div>
+        <div class="ps-5 mt-5">
+            <h2 class="" id="Sob-esc">SOBRE O ESCRITORIO</h2>
+        </div>
+        <div class="d-flex">
+            <div class="left">
+                <div class="content-p-2 p-5">
+                    <p>O escritório LILIAN JOIC ADVOGADA PREVIDENCIARISTA é dedicado a defender os interesses dos
+                        clientes na área previdenciária, oferecendo serviços de alta qualidade com ética, transparência
+                        e compromisso.</p>
+                    <p>Acreditamos que o sucesso é medido pela satisfação do cliente. Por isso, estamos comprometidos em
+                        fornecer soluções eficazes para os desafios previdenciários de nossos clientes.</p>
+                    <p>Atendemos em Sobradinho/BA e também em Juazeiro, Pilão Arcado e Salitre, garantindo acesso fácil
+                        aos nossos serviços em várias regiões</p>
+                </div>
+            </div>
+            <div class="rigth-2">
+                <img src="src/images/lilian-person-2.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div>
+                <h1 id="nosso-time">NOSSO TIME</h1>
+            </div>
+            <div class="time mt-4 mb-5">
+                <div class="time-item">
+                    <img src="src/images/fotos-time/lilian-time.png" alt="Foto de Lilian">
+                    <div class="info-time">
+                        <h3>LILIAN JOIC BATISTA</h3>
+                        <span class="profissao">Advogado(a)</span>
+                        <div class="social-midias-time">
+                            <a href="#" class="gradient-text"><i class="bi bi-instagram"></i></i></a>
+                            <a href="#" class="gradient-text"><i class="bi bi-envelope-at"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-item">
+                    <img src="src/images/fotos-time/nhewvys-time.png" alt="Foto de Lilian">
+                    <div class="info-time">
+                        <h3>NHEWVYS BATISTA</h3>
+                        <span class="profissao">Colaborador</span>
+                        <div class="social-midias-time">
+                            <a href="#" class="gradient-text"><i class="bi bi-instagram"></i></i></a>
+                            <a href="#" class="gradient-text"><i class="bi bi-envelope-at"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-item">
+                    <img src="src/images/fotos-time/rhunnor-time.png" alt="Foto de Lilian">
+                    <div class="info-time">
+                        <h3>RHUNNOR BATISTA</h3>
+                        <span class="profissao">Colaborador</span>
+                        <div class="social-midias-time">
+                            <a href="#" class="gradient-text"><i class="bi bi-instagram"></i></i></a>
+                            <a href="#" class="gradient-text"><i class="bi bi-envelope-at"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="instagram-perfil">
+        <div class="container mb-4">
+            <div>
+                Acompanhe Nosso Perfil
+            </div>
+            <div class="wrapper-perfil">
+                <div class="d-flex gap-3 align-items-center">
+                    <img src="src/instagram/foto_perfil_instagram.png" alt="foto do perfil do instagram">
+                    <div>
+                        <div class="title_ig">
+                            <h3>lilianjoic_advocacia</h3>
+                        </div>
+                        <div class="perfil-bio">Dra. Lílian Joíc | Advogada | INSS ⚖️Especialista em benefícios Rurais
+                            do INSS 🗄️Direito do consumidor 🙌Te ajudo a conseguir o melhor benefício 🇧🇷 Atendimento
+                            em todo Brasil 🌎</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-post">
+                <div class="post">
+                    <a href="https://www.instagram.com/p/DDKS8VMRejM/" target="_blank" rel="noopener noreferrer"><img
+                            src="src/instagram/postes/foto_1.jpeg" alt="foto do instagram foto 1"></a>
+                </div>
+                <div class="post">
+                    <a href="http://www.instagram.com/p/C6KIlb9RtS3/" target="_blank" rel="noopener noreferrer"> <img
+                            src="src/instagram/postes/foto_2.jpg" alt="foto do instagram foto 2"></a>
+                </div>
+                <div class="post">
+                    <a href="http://www.instagram.com/p/DAjGFiNRCUg/" target="_blank" rel="noopener noreferrer"> <img
+                            src="src/instagram/postes/foto_3.jpg" alt="foto do instagram foto 3"></a>
+                </div>
+                <div class="post">
+                    <a href="http://www.instagram.com/p/DAJbZjqRCW_/" target="_blank" rel="noopener noreferrer"><img
+                            src="src/instagram/postes/foto4.jpg" alt="foto do instagram foto 4"></a>
+                </div>
+                <div class="post">
+                    <a href="http://www.instagram.com/p/DABcO-5RcWd/" target="_blank" rel="noopener noreferrer"><img
+                            src="src/instagram/postes/foto_5.jpg" alt="foto do instagram foto 5"></a>
+                </div>
+                <div class="post">
+                    <a href="http://www.instagram.com/p/DATahNfR2sC/" target="_blank" rel="noopener noreferrer"><img
+                            src="src/instagram/postes/foto_6.jpg" alt="foto do instagram foto 6"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <h4 class="gradient-text">Fale Conosco</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-telephone-fill gradient-text"></i>
+                                    <span>(74) 98871-1038</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-envelope-at-fill gradient-text"></i>
+                                    <span>lilianjoic.adv@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="gradient-text">Endereço</h4>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="bi bi-house-fill gradient-text"></i>
+                                    <span>
+                                        Rua 02, Quadra S-13, N 2-A, Vila São Joaquim, Sobradinho/BA - CEP: 48925-000
+                                        (Rua do Bradesco, próximo a ótica do vale)
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div>
+                        <h4 class="gradient-text">Serviços</h4>
+                        <ul id="categorias">
+                            <li>Auxílio-doença</li>
+                            <li>Aposentadorias</li>
+                            <li>BPC/LOAS</li>
+                            <li>Salário Maternidade</li>
+                            <li>Seguro-Defeso/Pesca</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col footer-logo">
+                    <img src="src/images/image-removebg-preview (6).png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="src/js/events.js"></script>
+</body>
+
+
+</html>

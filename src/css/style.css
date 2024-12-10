@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --orange: #FF9A00;
+    --dark-blue: #294167;
+    --dark-blue-1: #445063;
+    --gray-blue: #B8C6CC;
+}
+#nav-button{
+    display: none;
+}
+@media (max-width: 1000px){
+    #nav-button{
+        display: flex;
+        border: transparent;
+        background-color: transparent;
+        margin: 0 2rem;
+        font-size: 1.5rem;
+    }
+    .nav_links{
+        position: absolute;
+        width: 100%;
+        background-color: red;
+        top: 80px;
+    }
+    .nav_links ul{
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .btn-header{
+        display: none;
+    }
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    transition: .3s;
+    transform: scale(101%);
+}
+
+header.scrolled {
+    background-color: #fff;
+    transform: scale(1);
+    /* Fundo com transparência */
+    box-shadow: 0px 4px 6px rgba(175, 175, 175, 0.315);
+    /* Sombra leve */
+}
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+ul a:hover {
+    color: var(--orange);
+}
+
+header ul a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--orange);
+    transition: .3s;
+
+}
+
+ul a:hover::before {
+    width: 100%;
+}
+
+ul a.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    /* Reduza para algo visível, como uma linha */
+    background: var(--orange);
+    transition: .3s;
+    /* Troque por background ao invés de color */
+}
+
+ul a.active {
+    color: var(--orange);
+
+}
+
+.btn-header button {
+    color: #fff;
+    padding: .3rem 2rem;
+    display: flex;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-color: transparent;
+    background-color: var(--orange);
+    box-shadow: 0 4px 13.4px rgba(0, 0, 0, 0.25);
+}
+
+section#main {
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Ajusta o tamanho do background */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetições */
+    height: 100vh;
+    width: 100%;
+    /* Garante largura total */
+}
+
+#content-1 {
+    padding-top: 70px;
+    height: 100vh;
+    justify-content: end;
+
+}
+
+.left {
+    height: 100%;
+    width: 70%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* Configura alinhamento vertical */
+    justify-content: center;
+    /* Alinha o conteúdo ao final */
+}
+
+.rigth {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* Centraliza a imagem horizontalmente */
+    align-items: flex-end;
+    /* Centraliza a imagem verticalmente */
+}
+
+.rigth img {
+    width: 265px;
+    z-index: 1;
+
+
+}
+
+.tittle h1 {
+    color: var(--orange);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.tittle span {
+    color: var(--dark-blue-1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+
+}
+
+.content-left h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Poppins";
+    color: var(--dark-blue);
+}
+
+.content-left p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 80%;
+    text-align: justify;
+    font-family: "Poppins";
+    color: var(--dark-blue);
+}
+
+.rigth .circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: var(--gray-blue);
+    border-radius: 100%;
+    bottom: -200px;
+    right: -200px;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+.rigth .circle-2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--gray-blue);
+    border-radius: 100%;
+    top: 30px;
+    right: -70px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        /* Posição inicial */
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Move para cima */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Volta à posição inicial */
+    }
+}
+
+.tittle-page {
+    text-align: center;
+}
+
+.gradient-text {
+    color: transparent;
+    /* Torna o texto transparente */
+    background: linear-gradient(to right, #ECCE8F 0%, #9F895A 100%);
+    background-clip: text;
+    /* Faz o gradiente preencher o texto */
+    -webkit-background-clip: text;
+    /* Compatibilidade com WebKit (Chrome, Safari) */
+    -webkit-text-fill-color: transparent;
+    /* Necessário para navegadores WebKit */
+}
+
+.tittle-page h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.tittle-page span {
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+}
+
+/* ----------cards aqui------- */
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 340px;
+    height: 350px;
+    padding: 1rem;
+}
+
+.card-tittle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-tittle img {
+    width: 50px;
+}
+
+.card-tittle h3 {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-content p {
+    color: #505050;
+}
+
+/* Estilizar a barra de rolagem no Chrome */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largura da barra vertical */
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+    /* Cor do trilho */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    /* Cor da barra de rolagem */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    border: 2px solid transparent;
+    /* Espaço ao redor */
+    background-clip: content-box;
+    /* Ajuste do espaçamento */
+}
+
+#escritori {
+    background-color: #f8f8f8;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px #f8f8f8, 0 30px 30px #fff;
+}
+
+.content-p {
+    position: relative;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: justify;
+
+}
+
+.content-p::before {
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 10px;
+    top: 0;
+    left: -20px;
+    background-color: var(--orange);
+    box-shadow: 2px 8px 10px var(--orange);
+}
+
+.counters {
+    background-color: #fff;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    border-radius: 25px;
+    backdrop-filter: 100px;
+    min-height: 150px;
+    box-shadow: 0 0 20px #e9e9e9e3;
+
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.counter span {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #FFB347, #355C7D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.counter p {
+    color: #355C7D;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.circle-3 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -150px;
+    background-color: var(--gray-blue);
+    border-radius: 50%;
+    z-index: -1;
+    /* Coloca o círculo atrás das outras divs */
+    animation: float 3s ease-in-out infinite;
+    left: -150px;
+    /* transform: translateX(50%); */
+}
+
+#Sobre {
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Ajusta o tamanho do background */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetições */
+}
+
+.bg-gradient {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(90deg, #fff 50%, #ffffff86) !important;
+    /* De branco para preto */
+
+
+}
+
+#Sobre .rigth-2 {
+    display: flex;
+    justify-content: center;
+    /* Alinha horizontalmente */
+    align-items: flex-end;
+    /* Alinha verticalmente na parte inferior */
+
+}
+
+#Sobre .rigth-2 img {
+    width: 500px;
+    margin-bottom: 0;
+    /* Garante que a imagem não tenha espaçamento extra */
+}
+
+.content-p-2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--dark-blue-1);
+}
+
+#Sob-esc {
+    position: relative;
+    font-weight: 800;
+    color: var(--orange);
+}
+
+#Sob-esc::before {
+    position: absolute;
+    content: "";
+    width: 4%;
+    bottom: -4px;
+    z-index: 1000;
+    height: 4px;
+    background-color: var(--dark-blue);
+}
+
+#nosso-time {
+    font-weight: bold;
+
+    font-size: 2rem;
+}
+
+.time {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.time-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+    border: 2px solid #ededed;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: .8rem;
+    box-shadow:  -10px 10px 5px #f8f8f8;
+}
+
+.time-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.info-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-time h3{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: var();
+
+}
+.time .time-item:hover {
+    transform: scale(100.5%);
+   
+}
+
+.time:hover>.time-item:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9);
+    
+}
+.social-midias-time{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: .3rem;
+}
+.social-midias-time a{
+    font-size: 1.5rem;
+    
+}
+footer{
+    background: #17212b;
+    padding: 1rem;
+    color: white;
+}
+footer h4{
+    font-weight: 800;
+}
+#categorias li{
+    margin-bottom: .5rem;
+}
+footer ul li a{
+    display: flex;
+    gap: .6rem;
+    color: white;
+    margin-bottom: .5rem;
+    font-weight: normal;
+}
+footer ul li a i{
+    font-size: 1.3rem;
+}
+footer .footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer-logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*=======================================================
+======================= div do instagram =================
+=========================================================*/
+
+.title_ig h3{
+    font-weight: 800;
+
+}
+.wrapper-perfil{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    margin: 1rem auto;
+
+}
+
+.container-post{
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.post{
+    width: 350px;
+    height: 350px;
+}
+.post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
