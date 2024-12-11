@@ -599,7 +599,8 @@ footer .footer-logo img{
     section#main{
        padding-top: 120px;
        background-color: red;
-       overflow: visible ;
+       overflow: visible;
+       height: 100%;
     }
     #content-1{
         flex-wrap: wrap;
@@ -607,6 +608,7 @@ footer .footer-logo img{
     }
     .content-left p {
         width: 95%;
+        font-size: 12pt;
         
     }
     .left{
