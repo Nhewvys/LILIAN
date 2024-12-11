@@ -613,7 +613,7 @@ footer .footer-logo img {
 @media (max-width: 1000px) {
     section#main {
         padding-top: 120px;
-        overflow: visible;
+        overflow: hidden;
 
     }
 
@@ -644,16 +644,27 @@ footer .footer-logo img {
         height: fit-content;
 
     }
-
+    .rigth{
+        justify-content: end;
+        width: 100%;
+    }
     .rigth img {
-        width: 5rem;
+        width: 250px;
+
     }
 
     .rigth .circle {
-        width: 300px !important;
-        height: 300px !important;
-        bottom: -50px;
-        display: none;
+        width: 350px !important;
+        height: 350px !important;
+        bottom: 90px;
+        right: -100px;
+       
+    }
+    .rigth .circle-2.x{
+        left: -50px;
+       transform: translateY(-500%);
+        
+
     }
 
     #nav-button {
