@@ -1,14 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const navToggle = document.querySelector(".nav_toggle");
+    const navToggle = document.querySelector("#nav-button");
     const navLinks = document.querySelector(".nav_links");
-
+    const navLinkItems = navLinks.querySelectorAll("ul li a")
+    console.log(navLinkItems);
+    
     navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+        navLinks.classList.toggle("show");
+        header.classList.add("scrolled")
     });
+    navLinkItems.forEach(navLinkItem =>{
+        navLinkItem.onclick = (event)=>{
+            navLinks.classList.remove("show");
+        }
+    })
 });
 
 document.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
+    
     if (window.scrollY > 50) { // Ajuste o valor conforme necessário
         header.classList.add("scrolled");
     } else {
