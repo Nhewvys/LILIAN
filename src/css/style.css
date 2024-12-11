@@ -9,62 +9,6 @@
 #nav-button{
     display: none;
 }
-@media (max-width: 1000px){
-    section#main{
-       padding-top: 120px;
-       height: 150vh !important;
-    }
-    #content-1{
-        flex-wrap: wrap !important;
-        padding: 0 !important;
-    }
-    .content-left p {
-        width: 95% !important;
-        
-    }
-    .left{
-        padding: 0 !important;
-        width: 100% !important;
-        justify-content: start !important;
-
-    }
-    .rigth {
-        height: 100%;
-        width: 30%;
-       
-    }
-    
-    #nav-button{
-        display: flex;
-        border: transparent;
-        background-color: transparent;
-        margin: 0 2rem;
-        font-size: 1.5rem;
-    }
-    .nav_links{
-        position: absolute;
-        width: 100%;
-        background-color: #fff;
-        top: 80px;
-        transform: translateY(-150%);
-        z-index: -1;
-        opacity: 0;
-        transition: .3s;
-    }
-    .nav_links.show{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .nav_links ul{
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem !important;
-        flex-direction: column;
-    }
-    .btn-header{
-        display: none;
-    }
-}
 
 
 
@@ -156,6 +100,7 @@ ul a.active {
 section#main {
     overflow: hidden;
     background-size: cover;
+    background-color: #f8fbff;
     background-attachment: fixed;
     /* Ajusta o tamanho do background */
     background-position: center;
@@ -648,4 +593,61 @@ footer .footer-logo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 1000px){
+    section#main{
+       padding-top: 120px;
+       background-color: red;
+       overflow: visible ;
+    }
+    #content-1{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .content-left p {
+        width: 95%;
+        
+    }
+    .left{
+        padding: 0 !important;
+        width: 100%;
+        height: fit-content;
+
+    }
+    .rigth .circle{
+        width: 300px !important;
+        height: 300px !important;
+        top: 0;
+    }
+    #nav-button{
+        display: flex;
+        border: transparent;
+        background-color: transparent;
+        margin: 0 2rem;
+        font-size: 1.5rem;
+    }
+    .nav_links{
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        top: 80px;
+        transform: translateY(-150%);
+        z-index: -1;
+        opacity: 0;
+        transition: .3s;
+    }
+    .nav_links.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .nav_links ul{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem !important;
+        flex-direction: column;
+    }
+    .btn-header{
+        display: none;
+    }
 }
