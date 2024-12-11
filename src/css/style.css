@@ -6,7 +6,8 @@
     --dark-blue-1: #445063;
     --gray-blue: #B8C6CC;
 }
-#nav-button{
+
+#nav-button {
     display: none;
 }
 
@@ -489,7 +490,7 @@ section#main {
     cursor: pointer;
     transition: .4s;
     border-radius: .8rem;
-    box-shadow:  -10px 10px 5px #f8f8f8;
+    box-shadow: -10px 10px 5px #f8f8f8;
 }
 
 .time-item img {
@@ -504,59 +505,70 @@ section#main {
     flex-direction: column;
     align-items: center;
 }
-.info-time h3{
+
+.info-time h3 {
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
     color: var();
 
 }
+
 .time .time-item:hover {
     transform: scale(100.5%);
-   
+
 }
 
 .time:hover>.time-item:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9);
-    
+
 }
-.social-midias-time{
+
+.social-midias-time {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: .3rem;
 }
-.social-midias-time a{
+
+.social-midias-time a {
     font-size: 1.5rem;
-    
+
 }
-footer{
+
+footer {
     background: #17212b;
     padding: 1rem;
     color: white;
 }
-footer h4{
+
+footer h4 {
     font-weight: 800;
 }
-#categorias li{
+
+#categorias li {
     margin-bottom: .5rem;
 }
-footer ul li a{
+
+footer ul li a {
     display: flex;
     gap: .6rem;
     color: white;
     margin-bottom: .5rem;
     font-weight: normal;
 }
-footer ul li a i{
+
+footer ul li a i {
     font-size: 1.3rem;
 }
-footer .footer-logo{
+
+footer .footer-logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-footer .footer-logo img{
+
+footer .footer-logo img {
     width: 100%;
     object-fit: cover;
 }
@@ -566,11 +578,12 @@ footer .footer-logo img{
 ======================= div do instagram =================
 =========================================================*/
 
-.title_ig h3{
+.title_ig h3 {
     font-weight: 800;
 
 }
-.wrapper-perfil{
+
+.wrapper-perfil {
     display: flex;
     width: fit-content;
     justify-content: center;
@@ -578,58 +591,80 @@ footer .footer-logo img{
 
 }
 
-.container-post{
+.container-post {
     display: flex;
     gap: .5rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.post{
+
+.post {
     width: 350px;
     height: 350px;
 }
-.post img{
+
+.post img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-@media (max-width: 1000px){
-    section#main{
-       padding-top: 120px;
-       background-color: red;
-       overflow: visible;
-       height: 100%;
+@media (max-width: 1000px) {
+    section#main {
+        padding-top: 120px;
+        overflow: visible;
+
     }
-    #content-1{
+
+    #content-1 {
         flex-wrap: wrap;
         padding: 0;
+        height: auto;
+    }
+    .tittle h1{
+        font-size: 25pt;
+    }
+    .tittle span{
+        font-size: 12pt;
+    }
+
+    .content-left h4{
+        font-size: 18pt;
     }
     .content-left p {
         width: 95%;
         font-size: 12pt;
-        
+
     }
-    .left{
+
+    .left {
         padding: 0 !important;
         width: 100%;
         height: fit-content;
 
     }
-    .rigth .circle{
+
+    .rigth img {
+        width: 5rem;
+    }
+
+    .rigth .circle {
         width: 300px !important;
         height: 300px !important;
-        top: 0;
+        bottom: -50px;
+        display: none;
     }
-    #nav-button{
+
+    #nav-button {
         display: flex;
         border: transparent;
         background-color: transparent;
         margin: 0 2rem;
         font-size: 1.5rem;
     }
-    .nav_links{
+
+    .nav_links {
         position: absolute;
         width: 100%;
         background-color: #fff;
@@ -639,17 +674,20 @@ footer .footer-logo img{
         opacity: 0;
         transition: .3s;
     }
-    .nav_links.show{
+
+    .nav_links.show {
         opacity: 1;
         transform: translateY(0);
     }
-    .nav_links ul{
+
+    .nav_links ul {
         align-items: center;
         justify-content: center;
         margin-bottom: 1rem !important;
         flex-direction: column;
     }
-    .btn-header{
+
+    .btn-header {
         display: none;
     }
 }
