@@ -727,7 +727,8 @@ footer .footer-logo img {
         display: block !important;
     }
     .content-p-2 {
-        font-size: 12pt;
+        font-size: 14pt;
+        padding: 2.5rem !important;
         text-align: justify;
     }
 }
