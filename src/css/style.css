@@ -686,7 +686,7 @@ footer .footer-logo img {
     .rigth .circle-2 {
         top: 50%;
         left: -50px;
-        animation-delay: 1s;
+       
     }
 
     #nav-button {
@@ -722,5 +722,12 @@ footer .footer-logo img {
 
     .btn-header {
         display: none;
+    }
+    #sobre-esc-content{
+        display: block !important;
+    }
+    .content-p-2 {
+        font-size: 12pt;
+        text-align: justify;
     }
 }
