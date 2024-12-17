@@ -582,6 +582,14 @@ footer .footer-logo img {
     font-weight: 800;
 
 }
+.title_ig a{
+    color: #17212b;
+    text-decoration: none;
+    cursor: pointer;
+}
+.title_ig a:hover{
+    text-decoration: underline;
+}
 
 .wrapper-perfil {
     display: flex;
@@ -622,16 +630,28 @@ footer .footer-logo img {
         padding: 0;
         height: auto;
     }
-    .tittle h1{
+
+    .tittle h1 {
         font-size: 25pt;
     }
-    .tittle span{
+
+    .tittle span {
         font-size: 12pt;
     }
+    .tittle-page h1{
+        font-size: 20pt;
+    }
+    .tittle-page span{
+        font-size: 14pt;
+    }
+    .circle-3{
+        display: none !important;
+    }
 
-    .content-left h4{
+    .content-left h4 {
         font-size: 18pt;
     }
+
     .content-left p {
         width: 95%;
         font-size: 12pt;
@@ -644,10 +664,12 @@ footer .footer-logo img {
         height: fit-content;
 
     }
-    .rigth{
+
+    .rigth {
         justify-content: end;
         width: 100%;
     }
+
     .rigth img {
         width: 250px;
 
@@ -656,15 +678,15 @@ footer .footer-logo img {
     .rigth .circle {
         width: 350px !important;
         height: 350px !important;
-        bottom: 90px;
+        bottom: 70px;
         right: -100px;
-       
-    }
-    .rigth .circle-2.x{
-        left: -50px;
-       transform: translateY(-500%);
-        
 
+    }
+
+    .rigth .circle-2 {
+        top: 50%;
+        left: -50px;
+        animation-delay: 1s;
     }
 
     #nav-button {
