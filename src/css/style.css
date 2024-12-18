@@ -617,7 +617,9 @@ footer .footer-logo img {
     height: 100%;
     object-fit: cover;
 }
-
+.whatssap-contato{
+    display: none;
+}
 @media (max-width: 1000px) {
     section#main {
         padding-top: 120px;
@@ -730,5 +732,28 @@ footer .footer-logo img {
         font-size: 14pt;
         padding: 2.5rem !important;
         text-align: justify;
+    }
+    body{
+        position: relative;
+    }
+    .whatssap-contato{
+        display: none;
+    }
+    .whatssap-contato.show{
+        z-index: 1000;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #44c052;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .whatssap-contato a{
+        color: white;
+        font-size: 1.3rem;
     }
 }

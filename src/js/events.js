@@ -139,3 +139,31 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(sectionCounter);
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const whatsAppButton = document.querySelector(".whatssap-contato");
+    const targetSections = [document.querySelector("#main"), document.querySelector("footer")]; // Seções alvo
+
+    if (targetSections.length && whatsAppButton) {
+        const observer = new IntersectionObserver((entries) => {
+            let shouldHideButton = false;
+
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    shouldHideButton = true; // Botão deve sumir se qualquer seção estiver visível
+                }
+            });
+
+            if (shouldHideButton) {
+                whatsAppButton.classList.remove("show");
+            } else {
+                whatsAppButton.classList.add("show");
+            }
+        }, { threshold: 0.1 }); // Ativa quando 10% da seção estiver visível
+
+        // Observa todas as seções definidas
+        targetSections.forEach(section => {
+            if (section) observer.observe(section);
+        });
+    }
+});
+
