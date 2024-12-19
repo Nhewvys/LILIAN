@@ -757,3 +757,16 @@ footer .footer-logo img {
         font-size: 1.3rem;
     }
 }
+#created-by{
+    background-color: #17212b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#created-by p{
+    font-size: .9rem;
+    color: #656565;
+}
+#created-by p a{
+    color: #b8c6ccd0;
+}
